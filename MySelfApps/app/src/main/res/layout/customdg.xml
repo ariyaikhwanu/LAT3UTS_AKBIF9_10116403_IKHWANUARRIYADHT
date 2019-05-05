@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    tools:context=".FragmentProfile.CustomDialog">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Develop By Ikhwanu Arriyadh T"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVersi"
+            android:layout_below="@id/textView"
+
+            android:text="Versi Aplikasi :"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVersi1"
+            android:layout_toRightOf="@id/txtVersi"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/txtVersi"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="OK"
+          />
+    </RelativeLayout>
+</RelativeLayout>

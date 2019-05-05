@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tab_gambar_prof"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10sp"
+            />
+        <TextView
+            android:id="@+id/aboutmedesc_tab"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:text="@string/interestdesc"
+            android:textColor="@color/colorblackshade"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_gambar_prof"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="2dp"
+            android:background="#D7D7FD"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/aboutmedesc_tab"
+
+            />
+
+    <RelativeLayout
+    android:id="@+id/contact"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_below="@id/garis"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/textcontact"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Contact"
+            android:textColor="@color/colorblackshade"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <ImageView
+            android:id="@+id/ic_twitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/textcontact"
+            android:src="@drawable/daily_logo"
+            android:layout_marginTop="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:text="@string/twitter"
+            android:textColor="@color/colorblackshade"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ic_twitter"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textcontact"
+           android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <ImageView
+            android:id="@+id/ic_wa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/twitter"
+            android:src="@drawable/daily_logo"
+            android:layout_marginTop="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/wa"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:text="@string/wa"
+            android:textColor="@color/colorblackshade"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ic_twitter"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/twitter"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            />
+        <ImageView
+            android:id="@+id/ic_email"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/wa"
+            android:src="@drawable/daily_logo"
+            android:layout_marginTop="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:text="@string/email"
+            android:textColor="@color/colorblackshade"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ic_email"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/wa"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            />
+     </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/mapmup"
+        android:layout_marginTop="30dp"
+        android:layout_width="320dp"
+        android:orientation="vertical"
+        android:layout_height="150dp"
+        android:layout_below="@id/contact"
+        android:layout_centerInParent="true"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FindMe"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:textColor="@color/colorblackshade"
+            android:textStyle="bold"
+            />
+
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:layout_marginTop="10dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.mapwithmarker.MapsMarkerActivity"/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mapmup"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorblackshade"
+                android:gravity="center_vertical"
+                android:text="About Apps"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colororange"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MySelfApps</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutme">ABOUT ME</string>
+    <string name="aboutdesc">Saya Ikhwanu Arriyadh, seorang programmer\n
+    lulusan Tkenik Informatika UNIKOM BANDUNG.\n
+        Saya adalah tipe orang yang perfeksionis.
+    </string>
+    <string name="interest">INTEREST</string>
+    <string name="interestdesc">Saya SUKA MUSIK METAL\n
+        seperti seringai
+    </string>
+    <string name="gallery">GALLERY</string>
+    <string name="profile">PROFILE</string>
+    <string name="twitter">
+        <a href="https://twitter.com/ariyaikhwanu">
+            ariyaikhwanu
+        </a>
+    </string>
+
+    <string name="wa">
+        <a href="tel:082115044010">
+            082115044010
+        </a>
+    </string>
+
+    <string name="email">
+        <a href="mailto:ariyaikhwanu@gmail.com">
+            ariyaikhwanu@gmail.com
+        </a>
+
+    </string>
+    <string name="googlemapapi">AIzaSyDeRY0Jy8gee8DkJkZI_QTy4MCqzXaJjIM</string>
+</resources>

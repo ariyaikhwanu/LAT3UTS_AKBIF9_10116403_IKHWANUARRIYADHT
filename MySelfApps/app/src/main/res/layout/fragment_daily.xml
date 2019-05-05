@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="Fragment.DailyFragment">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorblackshade"
+        android:layout_height="?attr/actionBarSize">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tabdaily"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="ACTIVITY"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/tvdaily"
+                android:layout_height="wrap_content"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:id="@+id/viewdaily"
+                android:background="@color/colororange"
+                android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tabfriends"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="FRIENDS"
+                android:id="@+id/tvfriends"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_gravity="bottom"
+                android:background="@color/colororange"
+                android:id="@+id/viewfriends"
+                android:layout_height="2dp"/>
+        </FrameLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+    <!--THIS IS CONTAINER-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/containerpage"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        />
+</LinearLayout>
